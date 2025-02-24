@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de tres columnas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+        }
+        header, footer {
+            background-color: #333;
+            color: green;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #535344;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <p>Barra lateral izquierda.</p>
+        </aside>
+        <div class="content">
+            <p>Contenido principal</p>
+        </div>
+        <aside>
+            <p>Barra lateral derecha.</p>
+        </aside>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
